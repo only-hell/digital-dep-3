@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Факты о числах</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 500px;
+      margin: 50px auto;
+      text-align: center;
+    }
+    input, select, button {
+      padding: 10px;
+      font-size: 16px;
+      margin: 5px;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    #loading {
+      display: none;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Факт о числе</h1>
+
+  <input type="number" id="numberInput" placeholder="Введите число" />
+  <select id="category">
+    <option value="trivia">Интересный факт</option>
+    <option value="math">Математика</option>
+    <option value="year">Год</option>
+  </select>
+  <button onclick="getFact()">Поиск</button>
+
+  <div id="loading">Загрузка...</div>
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

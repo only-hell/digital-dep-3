@@ -1,0 +1,12 @@
+.delete-btn, .rename-btn {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  color: red;
+}
+
+.rename-btn {
+  color: blue;
+}

@@ -1,0 +1,93 @@
+body {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  gap: 2px;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.snake {
+  background-color: green;
+}
+
+.food {
+  background-color: red;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.controls button {
+  font-size: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.controls input {
+  padding: 5px;
+  font-size: 16px;
+  width: 100px;
+  text-align: center;
+}
+
+#score {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.joystick {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 16px 0;
+}
+
+.joystick-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 4px 0;
+}
+
+.joy-btn {
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #ececec;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.joy-btn:hover {
+  background-color: #ddd;
+}
+
+.joy-center {
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  pointer-events: none;
+}

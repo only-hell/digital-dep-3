@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Snake Game</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <div id="game-board"></div>
+
+    <div class="controls">
+      <div id="score">Очки: 1</div>
+
+      <div class="joystick">
+        <div class="joystick-row">
+          <button class="joy-btn" data-dir="up">⬆</button>
+        </div>
+        <div class="joystick-row">
+          <button class="joy-btn" data-dir="left">⬅</button>
+          <button disabled class="joy-center"></button>
+          <button class="joy-btn" data-dir="right">➡</button>
+        </div>
+        <div class="joystick-row">
+          <button class="joy-btn" data-dir="down">⬇</button>
+        </div>
+      </div>
+      
+
+      <label>
+        Скорость (мс):
+        <input type="number" id="speed-control" min="100" step="100" value="800" />
+      </label>
+
+      <button id="pause-button">Пауза</button>
+      <button id="reset-button">Сброс</button>
+    </div>
+  </body>
+</html>
